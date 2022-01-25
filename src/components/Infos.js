@@ -1,6 +1,6 @@
 function Infos(props){
     const {value, type} = props
-    if(type == 'sugar'){
+    if(type === 'sugar'){
         return (
             <div>
                 Le taux de sucre est de : {value}

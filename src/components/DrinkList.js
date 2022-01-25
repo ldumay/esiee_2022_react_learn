@@ -2,20 +2,17 @@ import {drinks} from '../datas/Drinks.js'
 import Tarif from './Tarif'
 import Infos from './Infos'
 
-function handleClick(){
-    console.log("ceci est un click");
-}
+function DrinkList(props){
 
-function handleClickTest(test){
-    console.log("click = " + test);
-}
+    function addToSel(who){
+        props.updateSel(who)
+    }
 
-function DrinkList(){
     return (
         <div>
             <ul>
                 {drinks.map((drink, index) => (
-                    <li key={`${drink.id}-${drink.name}`} onClick={handleClick}>
+                    <li key={`${drink.id}-${drink.name}`} onClick={()=>addToSel(drink.name)}>
                         {drink.id} - {drink.name}
                         {drink.category === 'alcool' && <span>*</span>}
                         <Infos type="sugar" value={drink.sugar}/>
@@ -24,8 +21,6 @@ function DrinkList(){
                 ))}
             </ul>
             <Tarif />
-            <br/>
-            <button name="test" onClick={ () => handleClickTest('Event')}>Test</button>
         </div>
     )
 }
