@@ -1,9 +1,18 @@
 import { useState } from "react"
 
 function Form(){
+    /*
+    Défini un evaleur par défaut : useState
+    */
     const [inputValue, setInputValue] = useState("Poser une question")
-
-    //console.log(e.target.value)
+    
+    function checkValue(value){
+        if(!value.includes('f')){ //Interdit de mettre des "f"
+            setInputValue(value)
+        } else {
+            alert("Pas de lettre f")
+        }
+    }
 
     return (
         <div>
@@ -12,11 +21,10 @@ function Form(){
                 
                 <textarea
                     value={inputValue}
-                    onChange={ (e) => setInputValue(e.target.value) }
+                    onChange={ (e) => checkValue(e.target.value) }
                 />
                 <br/>
                 <button onClick={ () => alert(inputValue) }>Alert</button>
-                
             </form>
             
         </div>

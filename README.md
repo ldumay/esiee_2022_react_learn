@@ -69,3 +69,17 @@ code
 ![image](_img_readme/016.png)
 
 ![image](_img_readme/017.png)
+
+### Gestion/Détection : 
+
+Exemple avec la lettre "f"
+
+![image](_img_readme/019.png)
+
+![image](_img_readme/020.png)
+
+![image](_img_readme/021.png)
+
+### Autres
+
+![image](_img_readme/022.png)
