@@ -41,3 +41,7 @@ Résultat
 Plus
 
 ![image](_img_readme/009.png)
+
+## Commit v0.0.7 - Appel d'un composant dans un autre
+
+![image](_img_readme/010.png)

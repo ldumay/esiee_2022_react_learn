@@ -1,16 +1,7 @@
 import {drinks} from '../datas/Drinks.js'
+import Tarif from './Tarif'
 
 function DrinkList(){
-    const currentTime = new Date().getHours()
-    const isHappyHour = currentTime > 17 && currentTime < 20
-    // Possible : const isHappyHour = 20 > currentTime > 17
-
-    const tarif = isHappyHour ? (
-        <div>C'est l'Happy Hour !</div>
-    ) : (
-        <div>C'est plein pot !</div>
-    )
-
     return (
         <div>
             <ul>
@@ -31,7 +22,7 @@ function DrinkList(){
                     </li>
                 ))}
             </ul>
-            {tarif}
+            <Tarif />
         </div>
     )
 }
