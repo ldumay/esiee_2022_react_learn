@@ -4,11 +4,16 @@ function Panier(){
     const cokePrice = 3
     return(
         <div>
-            <ul>
-                <li>Burger : {burgerPrice}</li>
-                <li>Frites : {friesPrice}</li>
-                <li>Coca : {cokePrice}</li>
-            </ul>
+            <div>
+                <ul>
+                    <li>Burger : {burgerPrice}</li>
+                    <li>Frites : {friesPrice}</li>
+                    <li>Coca : {cokePrice}</li>
+                </ul>
+            </div>
+            <div>
+                Total : {burgerPrice + friesPrice + cokePrice} €
+            </div>
         </div>
     )
 }
