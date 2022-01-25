@@ -1,11 +1,6 @@
+import {drinks} from '../datas/Drinks.js'
+
 function DrinkList(){
-    const drinks = [
-        'water',
-        'sprite',
-        'beer',
-        'fruit juice',
-        'wine'
-    ]
     return (
         /* Base 
         <ul>
@@ -17,7 +12,7 @@ function DrinkList(){
 
         <ul>
             {drinks.map((drink, index) => (
-                <li key={`${index}-${drink}`}>{drink}</li>
+                <li key={`${drink.id}-${drink.name}`}>{drink.name}</li>
             ))}
         </ul>
     )

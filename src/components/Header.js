@@ -5,7 +5,7 @@ function Header(){
     return(
         <header>
             <h1 className="titre">Je suis le composant</h1>
-            <img src={logo} alt="Mon logo"/>
+            <img className="logo" alt="Mon logo" src={logo}/>
         </header>
 
         /* Autre méthode possible
