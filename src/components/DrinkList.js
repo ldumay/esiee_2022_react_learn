@@ -5,6 +5,12 @@ function DrinkList(){
     const isHappyHour = currentTime > 17 && currentTime < 20
     // Possible : const isHappyHour = 20 > currentTime > 17
 
+    const tarif = isHappyHour ? (
+        <div>C'est l'Happy Hour !</div>
+    ) : (
+        <div>C'est plein pot !</div>
+    )
+
     return (
         <div>
             <ul>
@@ -25,12 +31,7 @@ function DrinkList(){
                     </li>
                 ))}
             </ul>
-
-            {isHappyHour ? (
-                <div>C'est l'Happy Hour !</div>
-            ) : (
-                <div>C'est plein pot !</div>
-            )}
+            {tarif}
         </div>
     )
 }
