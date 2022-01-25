@@ -24,6 +24,7 @@ function DrinkList(){
                 ))}
             </ul>
             <Tarif />
+            <br/>
             <button name="test" onClick={ () => handleClickTest('Event')}>Test</button>
         </div>
     )
