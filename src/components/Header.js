@@ -1,7 +1,12 @@
 import '../styles/Header.css'
+import logo from '../logo.svg'
+
 function Header(){
     return(
-        <h1 className="titre">Je suis le composant</h1>
+        <header>
+            <h1 className="titre">Je suis le composant</h1>
+            <img src={logo} alt="Mon logo"/>
+        </header>
 
         /* Autre méthode possible
         <h1 style={{
