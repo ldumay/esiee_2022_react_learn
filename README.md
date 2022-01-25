@@ -42,6 +42,16 @@ Plus
 
 ![image](_img_readme/009.png)
 
-## Commit v0.0.7 - Appel d'un composant dans un autre
+## Commit v0.0.8 - Appel d'un composant dans un autre
 
 ![image](_img_readme/010.png)
+
+## Commit v0.0.9 - Passage d'argument à un composant
+
+détail de la destructuration avec `props`
+
+![image](_img_readme/011.png)
+
+code 
+
+![image](_img_readme/012.png)
