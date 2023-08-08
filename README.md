@@ -1,4 +1,4 @@
-# React Project
+# ESIEE-IT - 2022 - Apprentissage de React
 
 ## Docs.
 
